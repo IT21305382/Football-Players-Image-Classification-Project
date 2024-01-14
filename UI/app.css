@@ -1,0 +1,125 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #343a40;
+    padding: 10px;
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Cards */
+.card-wrapper {
+    margin: 2% 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.custom-circle-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.custom-circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin: 10px;
+    width: 200px; /* Adjust as needed */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    text-align: center;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Dropzone */
+.dropzone {
+    border: 2px dashed #adb5bd;
+    background: #ffffff;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Buttons */
+.btn-success {
+    background-color: #007bff;
+    border-color: #28a745;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-success:hover {
+    background-color: #28a745;
+}
+
+/* Error message */
+.error {
+    font-size: 1.2rem;
+    color: #dc3545;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Result Table */
+#classTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#classTable th, #classTable td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+#classTable th {
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: bold;
+}
